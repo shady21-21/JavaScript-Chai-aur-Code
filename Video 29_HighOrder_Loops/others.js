@@ -66,6 +66,41 @@ const arr2 = [12, 34, 5,55, 565]
 for (const num in arr2) {
     // console.log(num)  //here print the index || keys    not values.
     //you have to write
-    console.log(arr2[num])
+    // console.log(arr2[num])
 }
 
+
+
+//++++++++++++++++++++++++++++++++ FOR-EACH-LOOP ++++++++++++++++++++++++++++++++++++++
+const coding = ["Java", "JavaScript", "Ruby", "Python", "c++"]
+
+coding.forEach( (val) =>{
+    // console.log(val)
+})
+
+
+coding.forEach( (item, index, arr) =>{
+    // console.log(item, index, arr)
+})
+
+
+
+//first define a array and inside array define objects.
+const myCoding = [
+    {
+        languageName:"JavaScript", 
+        languageFileName:"js "
+    }, 
+    {
+        languageName:"C++", 
+        languageFileName:"cpp "
+    }, 
+    {
+        languageName:"Java", 
+        languageFileName:"java "
+    }
+
+]
+myCoding.forEach( (obj) =>{
+    console.log(obj.languageFileName)
+} )

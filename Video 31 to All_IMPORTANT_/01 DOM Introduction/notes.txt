@@ -1,0 +1,64 @@
+what is DOM ?
+-> Documet Object Model
+
+Go any web site 
+Inspect that website.
+Go to console.
+write --> console.log(window.documet)
+but if you have any special case.
+write 
+console.dir(documet)
+
+
+
+Erpor Documet j model ta kon Object er upro base kore banano ache ota sikhte hobe.
+
+//This model is base on our index.html file.
+
+
+                                window  
+                                   |
+                                Documet
+                                   |
+                                  HTML
+                                  /    \
+                                HEAD    BODY
+                                / \           \      
+                            title meta         div --> attribute
+                             |      |          / \
+                         Text Node  attribute  h1 p
+                                               |  |
+                                              / \ textnode
+                                      attribute textnode
+
+
+
+we write -> console.log(documet.) 
+documet er por "." use kore documet er fun gulo use kore pari.
+Ex ->console.log(documet.baseURI) 
+    console.log(documet.links)  //Akhen j links gulo pabo oi gulo html collection 
+    array noi ..html collection gulo k array te convert kora jabe.ay gulo direct array noi.
+
+but you will write  - console.log(documet.links[2])
+                      //ata amake akbare 2 no link a poncha dibe.
+
+
+
+
+
+
+//Kichu querySelector
+
+jemon example ---
+documet.getElementbyId('firstHeading')
+-> tho ey line ta lekhar for er line 'firstHeading' id tar info payajabo.
+--> er upor kichu manupulation korbo.
+--> ami innner HTML ta k change korbo.
+documet.getElementbyId('firstHeading').innerHTML = "<H1>DEBU</H1>"
+-> ata run korar por page ta manupulate hoya jabe.
+"--> atay Hocchay DOM Manupulation."
+
+
+
+
+

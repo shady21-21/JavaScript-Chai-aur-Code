@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Class 3</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    //I have to add one more list item
+    function addLan(lanName){
+        //create list item.
+        const listItem = document.createElement('li')
+        listItem.innerHTML = `${lanName}`
+        //now select lag class
+        document.querySelector('.language').
+        appendChild(listItem)
+
+    }
+    //call the fun
+    addLan('Java')
+    addLan('Ruby ')
+    //uporer j fun ta ache ota li gulo add kor6e akbare prothom 
+    //theke check kore kore .. suppose jodi 1Lac li list take tar por jodi
+    //ami akata li add korte chai tahole age oi 1 Lac li k check korbe tarpor 
+    // ay li ta k add korbe.
+
+
+    //Akta optimize way te amake add korte hobe.
+    function addOptmizeLan(lagName){
+        const listItem = document.createElement('li')
+        const addText = document.createTextNode(lagName)
+        listItem.appendChild(addText)
+        document.querySelector('.language').
+        appendChild(listItem)
+
+    }
+    addOptmizeLan('golang')
+
+
+    //EDIT........
+    const secondLan = document.querySelector('li:nth-child(2)')
+    // secondLan.innerHTML = 'c++'
+    const newli = document.createElement('li')
+    newli.textContent = 'C language'
+    secondLan.replaceWith(newli)
+
+    //one more edit with another methord.
+    const firstLan = document.querySelector('li:nth-child(1)')
+    firstLan.outerHTML = '<li>TypeScript</li>'
+
+    //REMOVE.
+    //now remove last child.
+    const lastLan = document.querySelector('li:last-child')
+    lastLan.remove()
+
+
+
+</script>
+</html>

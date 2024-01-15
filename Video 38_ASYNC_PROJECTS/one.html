@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC Video Concept 1</title>
+</head>
+<body style="background-color:skyblue;">
+    <h1>Hello Developers</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDebu = function(){
+        console.log(`I'm Debu!!`)
+    }
+
+    //TARGET : i Change H1 text but 2 Sec later.
+    const chanegText = function(){
+        document.querySelector('h1').
+        innerHTML = 'Learning JS Video!'
+    }
+    const stopChangeText = setTimeout(chanegText, 2000)
+    document.querySelector('#stop').addEventListener(
+        'click', (e)=>{
+            clearTimeout(stopChangeText)
+            console.log("STOPPED FOR CHANGING!")
+        }
+    )
+</script>
+</html>

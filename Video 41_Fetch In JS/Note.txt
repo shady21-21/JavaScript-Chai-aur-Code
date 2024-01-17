@@ -1,0 +1,3 @@
+Why Fetch excute first and then other promises excute ?
+
+--> Fetch priorty is higher than promises.

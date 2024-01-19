@@ -1,0 +1,39 @@
+/* FILEPATH: /Users/debapriyodas/Desktop/all-About-javaScript-1/Video 38_ASYNC_PROJECTS/Project 1/style.css */
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px 4px #fff;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#start {
+    background-color: #28a745;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+#stop {
+    background-color: #dc3545;
+    border: 2px solid black;
+    font-size: 20px;
+}
